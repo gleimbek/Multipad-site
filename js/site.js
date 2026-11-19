@@ -31,7 +31,7 @@ const EN = {
 
   'home.h1':'Write code in several windows at once, on any device',
   'home.lede':'Multipad is a free code editor in the spirit of Notepad++. Split each window into up to four panes, open another window on your second monitor, and run HTML, JavaScript, Python and SQL without leaving the editor.',
-  'home.dl':'Download Multipad', 'home.open':'Use it in the browser', 'home.fine':'Version 1.3.1. Free, no account needed, in English or Spanish.',
+  'home.dl':'Download Multipad', 'home.open':'Use it in the browser', 'home.fine':'Version 1.3.3. Free, no account needed, in English or Spanish.',
   'home.whyTitle':'What makes Multipad different', 'home.whyIntro':'The idea comes from Notepad++, built for people who work across more than one screen or switch devices during the day.',
   'home.h1t':'Panes and windows', 'home.h1p':'Up to four panes per window and one window on each monitor. Drag tabs from one window to another.', 'home.h1l':'See all features',
   'home.h2t':'Run your code', 'home.h2p':'HTML, JavaScript, Python and SQL run in your browser. Java, C++ and other compiled languages run on a Judge0 server.', 'home.h2l':'See the languages',
@@ -40,7 +40,7 @@ const EN = {
   'demo.win1':'Window 1', 'demo.win2':'Window 2, right monitor', 'demo.win3':'Window 3', 'demo.run':'Run', 'demo.live':'Live', 'demo.preview':'Preview', 'demo.panes2':'2 panes', 'demo.codeLabel':'Demo HTML code',
   'demo.note':'Edit the code: the preview changes as you type. This is how the run panel works in the app.',
 
-  'feat.h1':'Features', 'feat.lede':'Everything Multipad does in version 1.3.1.',
+  'feat.h1':'Features', 'feat.lede':'Everything Multipad does in version 1.3.3.',
   'f1t':'Up to four panes per window', 'f1p':'Put two or four files side by side or stacked. Drag the dividers to size them (double-click evens them out), or clone a tab to see the same file in two places.',
   'f2t':'One window on each monitor', 'f2p':'"New window on another screen" opens Multipad straight on your second monitor (desktop Chrome and Edge). Each window remembers its tabs and panes, and you can name it, for example "Left monitor".',
   'f3t':'Tabs that travel between windows', 'f3p':'Drag a tab to another window or use "Send to another window…". If the same file is open in two windows, what you type in one shows up in the other. Close a window by mistake and get it back with Reopen closed window.',
@@ -48,6 +48,7 @@ const EN = {
   'f5t':'Errors are marked as you type', 'f5p':'A red underline, a dot in the margin and a counter in the status bar; F8 jumps to the next one. When you run, it marks the line where Python, JavaScript or the Java, C or C++ compiler failed.',
   'f6t':'What you expect from an editor', 'f6p':'Highlighting for more than 20 languages, find and replace with regular expressions, go to line, multiple cursors, code folding, autocomplete, comment and sort lines, light, dark or automatic theme.',
   'f7t':'Built for touch screens too', 'f7p':'On tablets and phones an extra row of keys appears: tab, braces, parentheses, arrows and undo.',
+  'f9t':'Folders to organize your files', 'f9p':'Create folders and subfolders in Workspace documents and move files by dragging them. Save a whole folder to disk with all its files, or download it as a .zip.',
   'f8t':'Works offline', 'f8p':'Once installed, it opens without a connection. Python and SQL need internet only the first time you use them; Judge0 always does.',
   'files.title':'Where your files are saved', 'files.intro':'Everything you type saves in the browser storage of that device. When you save with Ctrl+S, it depends on the browser:',
   'files.th1':'Browser', 'files.th2':'Save (Ctrl+S)', 'files.th3':'Open folder',
@@ -86,6 +87,8 @@ const EN = {
   'k10':'Find / Replace', 'k11':'Go to line', 'k12':'Next error', 'k13':'Split pane', 'k14':'Move tab to the other pane', 'k15':'New window', 'k16':'Side panel', 'k17':'Word wrap',
 
   'news.h1':'News', 'news.lede':'New versions and changes to Multipad.',
+  'n4d':'Version 1.3.3, November 2026', 'n4p':'If you press Open while the file picker is already open, Multipad tells you instead of showing an error.',
+  'n3d':'Version 1.3.2, November 2026', 'n3p':'Folders in Workspace documents: create folders and subfolders, move files by dragging them, and save a whole folder to disk, or as a .zip on Android, Firefox and iPhone. The open-file marker is now a window icon, so it no longer looks like unsaved changes.',
   'n2d':'Version 1.3.1, November 2026', 'n2p':'Save all now saves new documents too: it asks where to save each one. Installers for Windows, Mac, Linux and Android arrive.',
   'n1d':'November 2026', 'n1p':'The Multipad site launches. Version 1.3.0 includes panes, multiple windows, running code and errors marked as you type.',
   'updNote':'When there is a new version, the app tells you and updates with one tap.',
