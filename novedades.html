@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=5">
+<link rel="stylesheet" href="css/site.css?v=6">
 </head>
-<body data-title-en="News | Multipad">
+<body data-title-en="News | Multipad" data-title-pt="Novidades | Multipad" data-title-fr="Nouveautés | Multipad">
 <a class="skip" href="#main" data-i18n="skip">Ir al contenido</a>
 <header class="top">
   <div class="wrap">
@@ -32,7 +32,12 @@
       <a href="donar.html" data-i18n="nav.donate">Donar</a>
       <a href="autor.html" data-i18n="nav.author">Autor</a>
     </nav>
-    <button class="lang" id="langBtn" type="button" aria-label="Switch to English">EN</button>
+    <select class="lang" id="langBtn" aria-label="Idioma / Language">
+      <option value="es">ES</option>
+      <option value="en">EN</option>
+      <option value="pt">PT</option>
+      <option value="fr">FR</option>
+    </select>
     <a class="btn btn-main" href="descargar.html" data-i18n="cta.download">Descargar</a>
   </div>
 </header>
@@ -46,6 +51,7 @@
 <section class="page-body">
   <div class="wrap" style="max-width:860px">
     <ul class="news">
+      <li><time datetime="2026-11" data-i18n="n5d">Versión 1.4.0, noviembre de 2026</time><p data-i18n="n5p">Multipad ya está en portugués y francés, además de español e inglés. El botón de idioma abre un menú con los cuatro, y la primera vez Multipad usa el idioma de tu navegador.</p></li>
       <li><time datetime="2026-11" data-i18n="n4d">Versión 1.3.3, noviembre de 2026</time><p data-i18n="n4p">Si pulsas Abrir mientras la ventana para elegir archivos ya está abierta, Multipad te avisa en lugar de mostrar un error.</p></li>
       <li><time datetime="2026-11" data-i18n="n3d">Versión 1.3.2, noviembre de 2026</time><p data-i18n="n3p">Carpetas en Documentos del espacio: crea carpetas y subcarpetas, mueve archivos arrastrándolos y guarda una carpeta completa en el disco, o como .zip en Android, Firefox y iPhone. El indicador de archivo abierto ahora es un ícono de ventana, para no confundirlo con los cambios sin guardar.</p></li>
       <li><time datetime="2026-11" data-i18n="n2d">Versión 1.3.1, noviembre de 2026</time><p data-i18n="n2p">Guardar todo ahora guarda también los documentos nuevos: te pregunta dónde guardar cada uno. Llegan los instaladores para Windows, Mac, Linux y Android.</p></li>
@@ -67,6 +73,6 @@
     <span><a href="#" id="repoLink" hidden data-i18n="code">Código en GitHub</a></span>
   </div>
 </footer>
-<script src="js/site.js?v=5"></script>
+<script src="js/site.js?v=6"></script>
 </body>
 </html>

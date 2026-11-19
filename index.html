@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=5">
+<link rel="stylesheet" href="css/site.css?v=6">
 </head>
-<body data-title-en="Multipad: a code editor with multiple windows and panes">
+<body data-title-en="Multipad: a code editor with multiple windows and panes" data-title-pt="Multipad: editor de código com várias janelas e painéis" data-title-fr="Multipad : éditeur de code avec plusieurs fenêtres et volets">
 <a class="skip" href="#main" data-i18n="skip">Ir al contenido</a>
 <header class="top">
   <div class="wrap">
@@ -32,7 +32,12 @@
       <a href="donar.html" data-i18n="nav.donate">Donar</a>
       <a href="autor.html" data-i18n="nav.author">Autor</a>
     </nav>
-    <button class="lang" id="langBtn" type="button" aria-label="Switch to English">EN</button>
+    <select class="lang" id="langBtn" aria-label="Idioma / Language">
+      <option value="es">ES</option>
+      <option value="en">EN</option>
+      <option value="pt">PT</option>
+      <option value="fr">FR</option>
+    </select>
     <a class="btn btn-main" href="descargar.html" data-i18n="cta.download">Descargar</a>
   </div>
 </header>
@@ -46,7 +51,7 @@
         <a class="btn btn-main" href="descargar.html" data-i18n="home.dl">Descargar Multipad</a>
         <a class="btn btn-ghost app-link" href="#" data-i18n="home.open">Usarlo en el navegador</a>
       </div>
-      <p class="fine" data-i18n="home.fine">Versión 1.3.3. Gratis, sin crear cuenta y en español o inglés.</p>
+      <p class="fine" data-i18n="home.fine">Versión 1.4.0. Gratis, sin crear cuenta, en español, inglés, portugués o francés.</p>
     </div>
     <div>
       <div class="stack">
@@ -120,6 +125,6 @@
     <span><a href="#" id="repoLink" hidden data-i18n="code">Código en GitHub</a></span>
   </div>
 </footer>
-<script src="js/site.js?v=5"></script>
+<script src="js/site.js?v=6"></script>
 </body>
 </html>
