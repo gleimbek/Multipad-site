@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lenguajes y ejecución | Multipad</title>
+<meta name="description" content="Qué lenguajes ejecuta Multipad y dónde corre cada uno.">
+<meta property="og:title" content="Lenguajes y ejecución | Multipad">
+<meta property="og:description" content="Qué lenguajes ejecuta Multipad y dónde corre cada uno.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="icon" href="logo-mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body data-title-en="Languages and running code | Multipad">
+<a class="skip" href="#main" data-i18n="skip">Ir al contenido</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo-mark.svg" alt="" width="30" height="30">Multipad</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav" data-i18n="menu">Menú</button>
+    <nav class="nav" id="mainNav" aria-label="Principal">
+      <a href="funciones.html" data-i18n="nav.features">Funciones</a>
+      <a href="lenguajes.html" data-i18n="nav.langs" aria-current="page">Lenguajes</a>
+      <a href="descargar.html" data-i18n="nav.download">Descargar</a>
+      <a href="atajos.html" data-i18n="nav.keys">Atajos</a>
+      <a href="novedades.html" data-i18n="nav.news">Novedades</a>
+      <a href="preguntas.html" data-i18n="nav.faq">Preguntas</a>
+      <a href="donar.html" data-i18n="nav.donate">Donar</a>
+      <a href="autor.html" data-i18n="nav.author">Autor</a>
+    </nav>
+    <button class="lang" id="langBtn" type="button" aria-label="Switch to English">EN</button>
+    <a class="btn btn-main" href="descargar.html" data-i18n="cta.download">Descargar</a>
+  </div>
+</header>
+<main id="main">
+<section class="page-head" style="border-top:0">
+  <div class="wrap">
+    <h1 data-i18n="lang.h1">Lenguajes y ejecución</h1>
+    <p class="lede" data-i18n="lang.lede">Multipad reconoce el lenguaje por la extensión del archivo. Si no acierta, lo cambias desde el menú Lenguaje o con Alt+L.</p>
+  </div>
+</section>
+<section class="page-body">
+  <div class="wrap">
+    <table>
+      <thead><tr><th data-i18n="thLang">Lenguaje</th><th data-i18n="thDoes">Qué hace al pulsar Ejecutar</th><th data-i18n="thWhere">Dónde corre</th></tr></thead>
+      <tbody>
+        <tr><td>HTML</td><td data-i18n="l1">Vista previa en vivo, con los .css y .js que enlaza si están abiertos en Multipad</td><td><span class="where w-browser" data-i18n="browser">Tu navegador</span></td></tr>
+        <tr><td>CSS</td><td data-i18n="l1b">Muestra el HTML que lo enlaza o una página de ejemplo</td><td><span class="where w-browser" data-i18n="browser">Tu navegador</span></td></tr>
+        <tr><td>JavaScript</td><td data-i18n="l2">Muestra el HTML que lo enlaza; si no hay, lo ejecuta y muestra console.log en la consola</td><td><span class="where w-browser" data-i18n="browser">Tu navegador</span></td></tr>
+        <tr><td>Python</td><td data-i18n="l3">Lo ejecuta con Pyodide; input() lee de la caja stdin</td><td><span class="where w-browser" data-i18n="browser">Tu navegador</span></td></tr>
+        <tr><td>SQL</td><td data-i18n="l4">Lo ejecuta en SQLite y muestra las tablas de resultado</td><td><span class="where w-browser" data-i18n="browser">Tu navegador</span></td></tr>
+        <tr><td>Markdown, SVG</td><td data-i18n="l5">Vista previa</td><td><span class="where w-browser" data-i18n="browser">Tu navegador</span></td></tr>
+        <tr><td>JSON</td><td data-i18n="l5b">Revisa que sea válido y lo formatea</td><td><span class="where w-browser" data-i18n="browser">Tu navegador</span></td></tr>
+        <tr><td>Java, C, C++, C#, Kotlin, Go, Rust, Ruby, PHP, Bash, TypeScript</td><td data-i18n="l6">Compila y ejecuta</td><td><span class="where w-server" data-i18n="server">Servidor Judge0</span></td></tr>
+        <tr><td>YAML, PowerShell, JSX, TSX</td><td data-i18n="l7">Edición con resaltado</td><td><span class="where w-edit" data-i18n="editOnly">Solo edición</span></td></tr>
+      </tbody>
+    </table>
+    <div class="prose">
+      <h2 data-i18n="lang.privTitle">Qué sale de tu dispositivo</h2>
+      <p data-i18n="lang.privP">HTML, CSS, JavaScript, Python y SQL nunca salen de tu dispositivo. Los lenguajes compilados se envían al servidor Judge0 para ejecutarse. Por defecto Multipad usa la instancia pública de Judge0; en Ejecutar, Servidor para Java, C++, C#… puedes usar Judge0 por RapidAPI con tu clave o tu propio servidor.</p>
+      <h2 data-i18n="lang.inTitle">Programas que leen del teclado</h2>
+      <p data-i18n="lang.inP">Si tu programa usa input(), Scanner o cin, escribe las respuestas en la caja stdin, una por línea, antes de ejecutar. En Java, la clase pública debe llamarse Main.</p>
+      <h2 data-i18n="lang.imgTitle">Imágenes en la vista previa</h2>
+      <p data-i18n="lang.imgP">Si abriste una carpeta, Multipad busca las imágenes en esa carpeta respetando la ruta. Si no, las busca por nombre en la sección Imágenes del panel lateral, donde puedes agregarlas arrastrándolas a la ventana.</p>
+      <p class="note" data-i18n="lang.note">Python descarga unos 12 MB la primera vez que lo usas.</p>
+    </div>
+  </div>
+</section>
+<section class="cta-band">
+  <div class="wrap">
+    <h2 data-i18n="band.title">Descárgalo gratis para tu computadora, tablet o celular</h2>
+    <a class="btn btn-main" href="descargar.html" data-i18n="band.btn">Ir a descargas</a>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <span data-i18n="foot">Multipad es un producto de Leimbek Web Studio.</span>
+    <span><a href="#" id="repoLink" hidden data-i18n="code">Código en GitHub</a></span>
+  </div>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

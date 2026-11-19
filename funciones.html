@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Funciones | Multipad</title>
+<meta name="description" content="Paneles, varias ventanas, ejecución de código, errores al escribir y más.">
+<meta property="og:title" content="Funciones | Multipad">
+<meta property="og:description" content="Paneles, varias ventanas, ejecución de código, errores al escribir y más.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="icon" href="logo-mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body data-title-en="Features | Multipad">
+<a class="skip" href="#main" data-i18n="skip">Ir al contenido</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo-mark.svg" alt="" width="30" height="30">Multipad</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav" data-i18n="menu">Menú</button>
+    <nav class="nav" id="mainNav" aria-label="Principal">
+      <a href="funciones.html" data-i18n="nav.features" aria-current="page">Funciones</a>
+      <a href="lenguajes.html" data-i18n="nav.langs">Lenguajes</a>
+      <a href="descargar.html" data-i18n="nav.download">Descargar</a>
+      <a href="atajos.html" data-i18n="nav.keys">Atajos</a>
+      <a href="novedades.html" data-i18n="nav.news">Novedades</a>
+      <a href="preguntas.html" data-i18n="nav.faq">Preguntas</a>
+      <a href="donar.html" data-i18n="nav.donate">Donar</a>
+      <a href="autor.html" data-i18n="nav.author">Autor</a>
+    </nav>
+    <button class="lang" id="langBtn" type="button" aria-label="Switch to English">EN</button>
+    <a class="btn btn-main" href="descargar.html" data-i18n="cta.download">Descargar</a>
+  </div>
+</header>
+<main id="main">
+<section class="page-head" style="border-top:0">
+  <div class="wrap">
+    <h1 data-i18n="feat.h1">Funciones</h1>
+    <p class="lede" data-i18n="feat.lede">Todo lo que hace Multipad en la versión 1.3.1.</p>
+  </div>
+</section>
+<section class="page-body">
+  <div class="wrap">
+    <div class="features">
+      <div class="feature">
+        <h3 data-i18n="f1t">Hasta cuatro paneles por ventana</h3>
+        <p data-i18n="f1p">Pon dos o cuatro archivos lado a lado o uno encima del otro. Arrastra los divisores para darles el tamaño que quieras (doble clic los empareja), o clona una pestaña para ver el mismo archivo en dos lugares.</p>
+      </div>
+      <div class="feature v">
+        <h3 data-i18n="f2t">Una ventana en cada monitor</h3>
+        <p data-i18n="f2p">"Ventana nueva en otra pantalla" abre Multipad directo en tu segundo monitor (Chrome y Edge de escritorio). Cada ventana recuerda sus pestañas y paneles, y puedes ponerle nombre, por ejemplo "Monitor izquierdo".</p>
+      </div>
+      <div class="feature a">
+        <h3 data-i18n="f3t">Pestañas que viajan entre ventanas</h3>
+        <p data-i18n="f3p">Arrastra una pestaña a otra ventana o usa "Enviar a otra ventana…". Si el mismo archivo está abierto en dos ventanas, lo que escribes en una aparece en la otra. Si cierras una ventana, la recuperas con Reabrir ventana cerrada.</p>
+      </div>
+      <div class="feature">
+        <h3 data-i18n="f4t">Ejecuta y mira el resultado al lado</h3>
+        <p data-i18n="f4p">F5 abre el panel con Vista previa y Consola. Con "En vivo", HTML, CSS y Markdown se actualizan mientras escribes. La vista previa se puede abrir en una ventana aparte y llevar al otro monitor.</p>
+      </div>
+      <div class="feature v">
+        <h3 data-i18n="f5t">Los errores se marcan mientras escribes</h3>
+        <p data-i18n="f5p">Subrayado rojo, un punto en el margen y un contador en la barra de estado; F8 salta al siguiente. Al ejecutar, marca la línea donde falló Python, JavaScript o el compilador de Java, C o C++.</p>
+      </div>
+      <div class="feature a">
+        <h3 data-i18n="f6t">Lo que esperas de un editor</h3>
+        <p data-i18n="f6p">Resaltado para más de 20 lenguajes, buscar y reemplazar con expresiones regulares, ir a línea, selección múltiple, plegado de código, autocompletado, comentar y ordenar líneas, tema claro, oscuro o automático.</p>
+      </div>
+      <div class="feature">
+        <h3 data-i18n="f7t">Pensado también para pantallas táctiles</h3>
+        <p data-i18n="f7p">En tablets y celulares aparece una fila extra de teclas: tabulación, llaves, paréntesis, flechas y deshacer.</p>
+      </div>
+      <div class="feature v">
+        <h3 data-i18n="f8t">Funciona sin internet</h3>
+        <p data-i18n="f8p">Una vez instalado, abre sin conexión. Python y SQL necesitan internet solo la primera vez que los usas; Judge0 siempre lo necesita.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:72px" data-i18n="files.title">Dónde se guardan tus archivos</h2>
+    <p class="intro" data-i18n="files.intro">Todo lo que escribes se guarda solo en el almacenamiento del navegador de ese dispositivo. Al guardar con Ctrl+S, depende del navegador:</p>
+    <table>
+      <thead><tr><th data-i18n="files.th1">Navegador</th><th data-i18n="files.th2">Guardar (Ctrl+S)</th><th data-i18n="files.th3">Abrir carpeta</th></tr></thead>
+      <tbody>
+        <tr><td data-i18n="files.r1">Chrome o Edge en Windows, Mac, Linux y ChromeOS</td><td data-i18n="files.r1b">Escribe directo en el archivo original</td><td data-i18n="yes">Sí</td></tr>
+        <tr><td data-i18n="files.r2">Chrome en Android</td><td data-i18n="files.r2b">Descarga una copia</td><td data-i18n="no">No</td></tr>
+        <tr><td data-i18n="files.r3">Safari en iPhone y iPad</td><td data-i18n="files.r3b">Compartir, luego Guardar en Archivos</td><td data-i18n="no">No</td></tr>
+        <tr><td>Firefox</td><td data-i18n="files.r2b">Descarga una copia</td><td data-i18n="no">No</td></tr>
+      </tbody>
+    </table>
+    <p class="note" data-i18n="files.note">Lo que escribes en la tablet no aparece solo en la computadora. Para llevar archivos entre dispositivos, guárdalos en una carpeta sincronizada como OneDrive, Google Drive o iCloud.</p>
+  </div>
+</section>
+<section class="cta-band">
+  <div class="wrap">
+    <h2 data-i18n="band.title">Descárgalo gratis para tu computadora, tablet o celular</h2>
+    <a class="btn btn-main" href="descargar.html" data-i18n="band.btn">Ir a descargas</a>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <span data-i18n="foot">Multipad es un producto de Leimbek Web Studio.</span>
+    <span><a href="#" id="repoLink" hidden data-i18n="code">Código en GitHub</a></span>
+  </div>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

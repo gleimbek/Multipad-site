@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donar | Multipad</title>
+<meta name="description" content="Apoya el desarrollo de Multipad, un editor de código gratuito.">
+<meta property="og:title" content="Donar | Multipad">
+<meta property="og:description" content="Apoya el desarrollo de Multipad, un editor de código gratuito.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="icon" href="logo-mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body data-title-en="Donate | Multipad">
+<a class="skip" href="#main" data-i18n="skip">Ir al contenido</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo-mark.svg" alt="" width="30" height="30">Multipad</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav" data-i18n="menu">Menú</button>
+    <nav class="nav" id="mainNav" aria-label="Principal">
+      <a href="funciones.html" data-i18n="nav.features">Funciones</a>
+      <a href="lenguajes.html" data-i18n="nav.langs">Lenguajes</a>
+      <a href="descargar.html" data-i18n="nav.download">Descargar</a>
+      <a href="atajos.html" data-i18n="nav.keys">Atajos</a>
+      <a href="novedades.html" data-i18n="nav.news">Novedades</a>
+      <a href="preguntas.html" data-i18n="nav.faq">Preguntas</a>
+      <a href="donar.html" data-i18n="nav.donate" aria-current="page">Donar</a>
+      <a href="autor.html" data-i18n="nav.author">Autor</a>
+    </nav>
+    <button class="lang" id="langBtn" type="button" aria-label="Switch to English">EN</button>
+    <a class="btn btn-main" href="descargar.html" data-i18n="cta.download">Descargar</a>
+  </div>
+</header>
+<main id="main">
+<section class="page-head" style="border-top:0">
+  <div class="wrap">
+    <h1 data-i18n="don.h1">Apoya a Multipad</h1>
+    <p class="lede" data-i18n="don.lede">Multipad es gratis y va a seguir siéndolo. Si te sirve y quieres que crezca, puedes hacer una donación de la cantidad que quieras.</p>
+  </div>
+</section>
+<section class="page-body">
+  <div class="wrap two">
+    <div>
+      <h2 data-i18n="don.howTitle">Cómo donar</h2>
+      <div class="donate-list" id="donateList">
+        <a class="btn btn-main donate-link" data-way="github" href="#">GitHub Sponsors</a>
+        <a class="btn btn-main donate-link" data-way="kofi" href="#">Ko-fi</a>
+        <a class="btn btn-main donate-link" data-way="paypal" href="#">PayPal</a>
+      </div>
+      <p class="note" id="donateSoon" hidden data-i18n="don.soon">Las donaciones se abren muy pronto. Mientras tanto, la mejor ayuda es contarle de Multipad a alguien que programe.</p>
+      <h2 style="margin-top:56px" data-i18n="don.otherTitle">Otras formas de ayudar</h2>
+      <ul class="plain">
+        <li data-i18n="don.o1">Comparte Multipad con tus compañeros de clase o de trabajo.</li>
+        <li data-i18n="don.o2">Cuéntanos qué falla o qué te gustaría que hiciera.</li>
+        <li data-i18n="don.o3">Si das clases de programación, úsalo con tus estudiantes.</li>
+      </ul>
+    </div>
+    <div>
+      <h2 data-i18n="don.whatTitle">En qué se usan las donaciones</h2>
+      <table>
+        <tbody>
+          <tr><td data-i18n="don.c1">Dominio y hosting del sitio y de la app</td></tr>
+          <tr><td data-i18n="don.c2">Firma de código, para que Windows y Mac instalen Multipad sin avisos de seguridad</td></tr>
+          <tr><td data-i18n="don.c3">Cuenta de desarrollador de Apple, necesaria para publicar la versión de Mac</td></tr>
+          <tr><td data-i18n="don.c4">Tiempo para nuevas funciones y corregir errores</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <span data-i18n="foot">Multipad es un producto de Leimbek Web Studio.</span>
+    <span><a href="#" id="repoLink" hidden data-i18n="code">Código en GitHub</a></span>
+  </div>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

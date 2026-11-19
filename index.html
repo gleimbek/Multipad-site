@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multipad: editor de código con varias ventanas y paneles</title>
+<meta name="description" content="Editor de código gratuito al estilo de Notepad++ para computadora, tablet y celular. Divide cada ventana en paneles, usa dos monitores y ejecuta HTML, JavaScript, Python y SQL.">
+<meta property="og:title" content="Multipad: editor de código con varias ventanas y paneles">
+<meta property="og:description" content="Editor de código gratuito al estilo de Notepad++ para computadora, tablet y celular. Divide cada ventana en paneles, usa dos monitores y ejecuta HTML, JavaScript, Python y SQL.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="icon" href="logo-mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body data-title-en="Multipad: a code editor with multiple windows and panes">
+<a class="skip" href="#main" data-i18n="skip">Ir al contenido</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo-mark.svg" alt="" width="30" height="30">Multipad</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav" data-i18n="menu">Menú</button>
+    <nav class="nav" id="mainNav" aria-label="Principal">
+      <a href="funciones.html" data-i18n="nav.features">Funciones</a>
+      <a href="lenguajes.html" data-i18n="nav.langs">Lenguajes</a>
+      <a href="descargar.html" data-i18n="nav.download">Descargar</a>
+      <a href="atajos.html" data-i18n="nav.keys">Atajos</a>
+      <a href="novedades.html" data-i18n="nav.news">Novedades</a>
+      <a href="preguntas.html" data-i18n="nav.faq">Preguntas</a>
+      <a href="donar.html" data-i18n="nav.donate">Donar</a>
+      <a href="autor.html" data-i18n="nav.author">Autor</a>
+    </nav>
+    <button class="lang" id="langBtn" type="button" aria-label="Switch to English">EN</button>
+    <a class="btn btn-main" href="descargar.html" data-i18n="cta.download">Descargar</a>
+  </div>
+</header>
+<main id="main">
+<section class="hero" style="border-top:0">
+  <div class="wrap">
+    <div>
+      <h1 data-i18n="home.h1">Escribe código en varias ventanas a la vez, en cualquier dispositivo</h1>
+      <p class="lede" data-i18n="home.lede">Multipad es un editor de código gratuito al estilo de Notepad++. Divide cada ventana hasta en cuatro paneles, abre otra ventana en tu segundo monitor y ejecuta HTML, JavaScript, Python y SQL sin salir del editor.</p>
+      <div class="ctas">
+        <a class="btn btn-main" href="descargar.html" data-i18n="home.dl">Descargar Multipad</a>
+        <a class="btn btn-ghost app-link" href="#" data-i18n="home.open">Usarlo en el navegador</a>
+      </div>
+      <p class="fine" data-i18n="home.fine">Versión 1.3.1. Gratis, sin crear cuenta y en español o inglés.</p>
+    </div>
+    <div>
+      <div class="stack">
+        <div class="ghost-win g1" aria-hidden="true"><span class="ghost-label" data-i18n="demo.win3">Ventana 3</span></div>
+        <div class="ghost-win g2" aria-hidden="true"><span class="ghost-label" data-i18n="demo.win2">Ventana 2, monitor derecho</span></div>
+        <div class="win" role="group" aria-label="Demo de Multipad">
+          <div class="titlebar"><img src="logo-mark.svg" alt="">Multipad<span class="wname" data-i18n="demo.win1">Ventana 1</span></div>
+          <div class="toolbar">
+            <button class="run" id="runBtn" type="button"><span aria-hidden="true">▶</span> <span data-i18n="demo.run">Ejecutar</span></button>
+            <label class="live"><input type="checkbox" id="liveChk" checked> <span data-i18n="demo.live">En vivo</span></label>
+            <span class="langtag">HTML</span>
+          </div>
+          <div class="panes">
+            <div class="pane">
+              <div class="tab">index.html</div>
+              <label class="skip" for="code" data-i18n="demo.codeLabel">Código HTML de la demo</label>
+              <textarea class="code" id="code" spellcheck="false"></textarea>
+            </div>
+            <div class="divider" aria-hidden="true"></div>
+            <div class="pane">
+              <div class="tab prev" data-i18n="demo.preview">Vista previa</div>
+              <iframe class="preview" id="preview" title="Vista previa" sandbox="allow-scripts"></iframe>
+            </div>
+          </div>
+          <div class="statusbar"><span id="pos">Ln 1, Col 1</span><span>UTF-8</span><span>LF</span><span class="hide-sm" data-i18n="demo.panes2">2 paneles</span></div>
+        </div>
+      </div>
+      <p class="demo-note" data-i18n="demo.note">Edita el código: la vista previa cambia mientras escribes. Así funciona el panel de ejecución en la app.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 data-i18n="home.whyTitle">Lo que hace distinto a Multipad</h2>
+    <p class="intro" data-i18n="home.whyIntro">La idea viene de Notepad++, pensada para quien trabaja con más de una pantalla o cambia de dispositivo durante el día.</p>
+    <div class="features">
+      <div class="feature">
+        <h3 data-i18n="home.h1t">Paneles y ventanas</h3>
+        <p data-i18n="home.h1p">Hasta cuatro paneles por ventana y una ventana en cada monitor. Arrastra pestañas de una ventana a otra.</p>
+        <a class="more" href="funciones.html" data-i18n="home.h1l">Ver todas las funciones</a>
+      </div>
+      <div class="feature v">
+        <h3 data-i18n="home.h2t">Ejecuta tu código</h3>
+        <p data-i18n="home.h2p">HTML, JavaScript, Python y SQL corren en tu navegador. Java, C++ y otros lenguajes compilados se ejecutan en un servidor Judge0.</p>
+        <a class="more" href="lenguajes.html" data-i18n="home.h2l">Ver los lenguajes</a>
+      </div>
+      <div class="feature a">
+        <h3 data-i18n="home.h3t">Instálalo donde trabajes</h3>
+        <p data-i18n="home.h3p">Windows, Mac, Linux, Android, iPhone y iPad. Una vez instalado abre sin internet.</p>
+        <a class="more" href="descargar.html" data-i18n="home.h3l">Ir a descargas</a>
+      </div>
+      <div class="feature">
+        <h3 data-i18n="home.h4t">Atajos de Notepad++</h3>
+        <p data-i18n="home.h4p">F5 para ejecutar, Ctrl+\ para dividir el panel, Alt+M para mover una pestaña. Si vienes de Notepad++, ya sabes usarlo.</p>
+        <a class="more" href="atajos.html" data-i18n="home.h4l">Ver los atajos</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cta-band">
+  <div class="wrap">
+    <h2 data-i18n="band.title">Descárgalo gratis para tu computadora, tablet o celular</h2>
+    <a class="btn btn-main" href="descargar.html" data-i18n="band.btn">Ir a descargas</a>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <span data-i18n="foot">Multipad es un producto de Leimbek Web Studio.</span>
+    <span><a href="#" id="repoLink" hidden data-i18n="code">Código en GitHub</a></span>
+  </div>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>
