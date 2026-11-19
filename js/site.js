@@ -4,12 +4,6 @@ const REPO_URL = ''; // por ejemplo 'https://github.com/gleimbek/multipad'
 // Instaladores: deja null mientras no exista el archivo; el botón se muestra gris.
 // Con GitHub Releases quedarían así:
 // 'https://github.com/gleimbek/multipad/releases/latest/download/Multipad-Setup.exe'
-// Donaciones: pega aquí tus enlaces cuando abras las cuentas. Los que queden en null no se muestran.
-const DONATE = {
-  github: null,  // 'https://github.com/sponsors/gleimbek'
-  kofi: null,    // 'https://ko-fi.com/tu-usuario'
-  paypal: null,  // 'https://www.paypal.com/donate/?hosted_button_id=...'
-};
 const RELEASES = 'https://github.com/gleimbek/Multipad/releases/latest/download/';
 const DOWNLOADS = {
   windows: RELEASES + 'Multipad-Setup.exe',
@@ -22,7 +16,7 @@ const EN = {
   'skip':'Skip to content', 'nav.features':'Features', 'nav.langs':'Languages', 'nav.download':'Download', 'nav.keys':'Shortcuts', 'nav.news':'News', 'nav.faq':'FAQ',
   'nav.donate':'Donate', 'nav.author':'Author',
   'don.h1':'Support Multipad', 'don.lede':'Multipad is free and will stay free. If it helps you and you want it to grow, you can donate any amount.',
-  'don.howTitle':'How to donate', 'don.soon':'Donations open very soon. In the meantime, the best help is telling someone who codes about Multipad.',
+  'don.howTitle':'Choose an amount', 'don.other':'Another amount', 'don.paypal':'Donations go through PayPal. PayPal opens in a new tab so you can confirm the amount and the payment.',
   'don.otherTitle':'Other ways to help', 'don.o1':'Share Multipad with your classmates or coworkers.', 'don.o2':'Tell us what breaks or what you would like it to do.', 'don.o3':'If you teach programming, use it with your students.',
   'don.whatTitle':'What donations pay for', 'don.c1':'Domain and hosting for the site and the app', 'don.c2':'Code signing, so Windows and Mac install Multipad without security warnings', 'don.c3':'An Apple developer account, required to publish the Mac version', 'don.c4':'Time for new features and bug fixes',
   'au.h1':'Who makes Multipad', 'au.lede':'Multipad is designed and built by Gustavo Leimbek, a web developer in Las Vegas, Nevada, and is a Leimbek Web Studio product.',
@@ -190,17 +184,6 @@ if (code) {
     if (e.key === 'F5' || (e.key === 'Enter' && (e.ctrlKey || e.metaKey))) { e.preventDefault(); render(); }
   });
   document.getElementById('runBtn').addEventListener('click', render);
-}
-
-// Página de donaciones: muestra solo los enlaces configurados
-const donateLinks = document.querySelectorAll('.donate-link');
-if (donateLinks.length) {
-  let any = false;
-  donateLinks.forEach(a => {
-    const url = DONATE[a.dataset.way];
-    if (url) { a.href = url; a.rel = 'noopener'; any = true; } else { a.remove(); }
-  });
-  if (!any) document.getElementById('donateSoon').hidden = false;
 }
 
 // Página de descargas: marca el sistema del visitante
