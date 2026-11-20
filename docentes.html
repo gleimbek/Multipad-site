@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Para docentes | Multipad</title>
+<meta name="description" content="Modo aula de Multipad: ejercicios de HTML, CSS y JavaScript con pruebas automáticas y entregas por Canvas.">
+<meta property="og:title" content="Para docentes | Multipad">
+<meta property="og:description" content="Modo aula de Multipad: ejercicios de HTML, CSS y JavaScript con pruebas automáticas y entregas por Canvas.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="icon" href="logo-mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=7">
+</head>
+<body data-title-en="For teachers | Multipad" data-title-pt="Para professores | Multipad" data-title-fr="Pour les enseignants | Multipad">
+<a class="skip" href="#main" data-i18n="skip">Ir al contenido</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo-mark.svg" alt="" width="30" height="30">Multipad</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav" data-i18n="menu">Menú</button>
+    <nav class="nav" id="mainNav" aria-label="Principal">
+      <a href="funciones.html" data-i18n="nav.features">Funciones</a>
+      <a href="lenguajes.html" data-i18n="nav.langs">Lenguajes</a>
+      <a href="descargar.html" data-i18n="nav.download">Descargar</a>
+      <a href="docentes.html" data-i18n="nav.teachers" aria-current="page">Docentes</a>
+      <a href="atajos.html" data-i18n="nav.keys">Atajos</a>
+      <a href="novedades.html" data-i18n="nav.news">Novedades</a>
+      <a href="preguntas.html" data-i18n="nav.faq">Preguntas</a>
+      <a href="donar.html" data-i18n="nav.donate">Donar</a>
+      <a href="autor.html" data-i18n="nav.author">Autor</a>
+    </nav>
+    <select class="lang" id="langBtn" aria-label="Idioma / Language">
+      <option value="es">ES</option>
+      <option value="en">EN</option>
+      <option value="pt">PT</option>
+      <option value="fr">FR</option>
+    </select>
+    <a class="btn btn-main" href="descargar.html" data-i18n="cta.download">Descargar</a>
+  </div>
+</header>
+<main id="main">
+<section class="page-head" style="border-top:0">
+  <div class="wrap">
+    <h1 data-i18n="tch.h1">Multipad para docentes</h1>
+    <p class="lede" data-i18n="tch.lede">Crea un ejercicio de HTML, CSS y JavaScript, compártelo con un enlace y recibe las entregas en Canvas. Las pruebas automáticas le dicen al alumno qué le falta antes de entregar.</p>
+  </div>
+</section>
+<section class="page-body">
+  <div class="wrap">
+    <video class="tch-video" controls preload="metadata" poster="media/modo-aula-poster.jpg" aria-label="Video: el modo aula de principio a fin">
+      <source src="media/multipad-modo-aula.mp4" type="video/mp4">
+    </video>
+    <p class="note" data-i18n="tch.video">El recorrido completo en 2 minutos: el docente crea el ejercicio, una alumna lo resuelve y lo entrega, y el docente revisa las entregas.</p>
+  </div>
+</section>
+<section class="page-body">
+  <div class="wrap two">
+    <div>
+      <h2 data-i18n="tch.howTitle">Cómo funciona</h2>
+      <ol class="plain">
+        <li data-i18n="tch.s1">Preparas los archivos iniciales en Multipad y escribes las instrucciones.</li>
+        <li data-i18n="tch.s2">Agregas pruebas automáticas y las verificas con tu propia solución.</li>
+        <li data-i18n="tch.s3">Copias el enlace y lo pegas en la tarea de Canvas. El ejercicio viaja dentro del enlace: no hay servidor ni cuentas.</li>
+        <li data-i18n="tch.s4">El alumno resuelve, pulsa Comprobar hasta que todo pase y sube a Canvas el .zip que descarga el botón Entregar.</li>
+        <li data-i18n="tch.s5">Descargas las entregas de Canvas y las abres en Revisar entregas: una fila por alumno, con sus pruebas y su código.</li>
+      </ol>
+      <a class="btn btn-main teacher-link" href="#" style="margin-top:18px" data-i18n="tch.cta">Activar herramientas para docentes</a>
+      <p class="note" data-i18n="tch.ctaNote">Abre Multipad con el menú Aula visible. Tus alumnos no necesitan activar nada: solo abren tu enlace.</p>
+    </div>
+    <div>
+      <h2 data-i18n="tch.testsTitle">Qué revisan las pruebas</h2>
+      <ul class="plain">
+        <li data-i18n="tch.t1">Que exista un elemento, o al menos N, por ejemplo tres elementos li.</li>
+        <li data-i18n="tch.t2">Que un elemento tenga un texto, un estilo CSS o un atributo, como el alt de una imagen.</li>
+        <li data-i18n="tch.t3">Que al hacer clic en un botón aparezca un texto, o que la consola muestre un resultado.</li>
+        <li data-i18n="tch.t4">Que la página no tenga errores de JavaScript.</li>
+      </ul>
+      <h2 style="margin-top:40px" data-i18n="tch.examTitle">Modo examen</h2>
+      <p data-i18n="tch.exam">Bloquea pegar texto copiado fuera de Multipad y registra cuándo el alumno sale de la ventana. Te da evidencia para conversar con el alumno; no impide del todo hacer trampa.</p>
+      <p class="note" data-i18n="tch.limits">Por ahora las pruebas cubren HTML, CSS y JavaScript. Python, SQL, Power BI y KNIME no se revisan automáticamente.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <span data-i18n="foot">Multipad es un producto de Leimbek Web Studio.</span>
+    <span><a href="#" id="repoLink" hidden data-i18n="code">Código en GitHub</a></span>
+  </div>
+</footer>
+<script src="js/site.js?v=7"></script>
+</body>
+</html>
