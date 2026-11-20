@@ -13,6 +13,31 @@ const DOWNLOADS = {
 };
 
 const EN = {
+  "nav.teachers":"Teachers",
+  "f10t":"Classroom mode for teachers",
+  "f10p":"Build HTML, CSS and JavaScript exercises with automatic tests, share them with a link and review the submissions your students upload to Canvas. Turn it on in Settings.",
+  "f10l":"See classroom mode",
+  "n6d":"Version 1.5.0, November 2026",
+  "n6p":"Classroom mode arrives: the teacher builds an exercise with automatic tests and shares it with a link; the student checks it and submits a .zip; the teacher reviews every submission in one table. Turn it on in Settings with Show teacher tools.",
+  "tch.h1":"Multipad for teachers",
+  "tch.lede":"Build an HTML, CSS and JavaScript exercise, share it with a link and collect submissions in Canvas. Automatic tests tell students what is missing before they submit.",
+  "tch.video":"The whole flow in 2 minutes: the teacher builds the exercise, a student solves and submits it, and the teacher reviews the submissions. The video is in Spanish.",
+  "tch.howTitle":"How it works",
+  "tch.s1":"You prepare the starter files in Multipad and write the instructions.",
+  "tch.s2":"You add automatic tests and check them against your own solution.",
+  "tch.s3":"You copy the link and paste it into the Canvas assignment. The exercise travels inside the link: no server, no accounts.",
+  "tch.s4":"The student works, presses Check until everything passes and uploads to Canvas the .zip the Submit button downloads.",
+  "tch.s5":"You download the submissions from Canvas and open them in Review submissions: one row per student, with their tests and their code.",
+  "tch.cta":"Turn on teacher tools",
+  "tch.ctaNote":"Opens Multipad with the Classroom menu visible. Your students do not need to turn anything on: they just open your link.",
+  "tch.testsTitle":"What the tests check",
+  "tch.t1":"That an element exists, or at least N of them, such as three li elements.",
+  "tch.t2":"That an element has a text, a CSS style or an attribute, such as an image alt.",
+  "tch.t3":"That clicking a button shows a text, or that the console prints a result.",
+  "tch.t4":"That the page has no JavaScript errors.",
+  "tch.examTitle":"Exam mode",
+  "tch.exam":"Blocks pasting text copied outside Multipad and records when the student leaves the window. It gives you evidence to talk with the student; it does not fully prevent cheating.",
+  "tch.limits":"For now the tests cover HTML, CSS and JavaScript. Python, SQL, Power BI and KNIME are not checked automatically.",
   'skip':'Skip to content', 'nav.features':'Features', 'nav.langs':'Languages', 'nav.download':'Download', 'nav.keys':'Shortcuts', 'nav.news':'News', 'nav.faq':'FAQ',
   'nav.donate':'Donate', 'nav.author':'Author',
   'don.h1':'Support Multipad', 'don.lede':'Multipad is free and will stay free. If it helps you and you want it to grow, you can donate any amount.',
@@ -31,7 +56,7 @@ const EN = {
 
   'home.h1':'Write code in several windows at once, on any device',
   'home.lede':'Multipad is a free code editor in the spirit of Notepad++. Split each window into up to four panes, open another window on your second monitor, and run HTML, JavaScript, Python and SQL without leaving the editor.',
-  'home.dl':'Download Multipad', 'home.open':'Use it in the browser', 'home.fine':'Version 1.4.0. Free, no account needed, in English, Spanish, Portuguese or French.',
+  'home.dl':'Download Multipad', 'home.open':'Use it in the browser', 'home.fine':'Version 1.5.0. Free, no account needed, in English, Spanish, Portuguese or French.',
   'home.whyTitle':'What makes Multipad different', 'home.whyIntro':'The idea comes from Notepad++, built for people who work across more than one screen or switch devices during the day.',
   'home.h1t':'Panes and windows', 'home.h1p':'Up to four panes per window and one window on each monitor. Drag tabs from one window to another.', 'home.h1l':'See all features',
   'home.h2t':'Run your code', 'home.h2p':'HTML, JavaScript, Python and SQL run in your browser. Java, C++ and other compiled languages run on a Judge0 server.', 'home.h2l':'See the languages',
@@ -40,7 +65,7 @@ const EN = {
   'demo.win1':'Window 1', 'demo.win2':'Window 2, right monitor', 'demo.win3':'Window 3', 'demo.run':'Run', 'demo.live':'Live', 'demo.preview':'Preview', 'demo.panes2':'2 panes', 'demo.codeLabel':'Demo HTML code',
   'demo.note':'Edit the code: the preview changes as you type. This is how the run panel works in the app.',
 
-  'feat.h1':'Features', 'feat.lede':'Everything Multipad does in version 1.4.0.',
+  'feat.h1':'Features', 'feat.lede':'Everything Multipad does in version 1.5.0.',
   'f1t':'Up to four panes per window', 'f1p':'Put two or four files side by side or stacked. Drag the dividers to size them (double-click evens them out), or clone a tab to see the same file in two places.',
   'f2t':'One window on each monitor', 'f2p':'"New window on another screen" opens Multipad straight on your second monitor (desktop Chrome and Edge). Each window remembers its tabs and panes, and you can name it, for example "Left monitor".',
   'f3t':'Tabs that travel between windows', 'f3p':'Drag a tab to another window or use "Send to another window…". If the same file is open in two windows, what you type in one shows up in the other. Close a window by mistake and get it back with Reopen closed window.',
@@ -104,6 +129,31 @@ const EN = {
 };
 
 const PT = {
+  "nav.teachers":"Professores",
+  "f10t":"Modo sala de aula para professores",
+  "f10p":"Crie exercícios de HTML, CSS e JavaScript com testes automáticos, compartilhe-os com um link e revise as entregas que seus alunos enviam no Canvas. Ative em Configurações.",
+  "f10l":"Ver o modo sala de aula",
+  "n6d":"Versão 1.5.0, novembro de 2026",
+  "n6p":"Chega o modo sala de aula: o professor cria um exercício com testes automáticos e o compartilha com um link; o aluno o verifica e entrega um .zip; o professor revisa todas as entregas em uma tabela. Ative em Configurações, com Mostrar ferramentas para professores.",
+  "tch.h1":"Multipad para professores",
+  "tch.lede":"Crie um exercício de HTML, CSS e JavaScript, compartilhe com um link e receba as entregas no Canvas. Os testes automáticos dizem ao aluno o que falta antes de entregar.",
+  "tch.video":"O fluxo completo em 2 minutos: o professor cria o exercício, uma aluna o resolve e entrega, e o professor revisa as entregas. O vídeo está em espanhol.",
+  "tch.howTitle":"Como funciona",
+  "tch.s1":"Você prepara os arquivos iniciais no Multipad e escreve as instruções.",
+  "tch.s2":"Você adiciona testes automáticos e os confere com sua própria solução.",
+  "tch.s3":"Você copia o link e cola na tarefa do Canvas. O exercício viaja dentro do link: sem servidor nem contas.",
+  "tch.s4":"O aluno resolve, aperta Verificar até tudo passar e envia no Canvas o .zip que o botão Entregar baixa.",
+  "tch.s5":"Você baixa as entregas do Canvas e as abre em Revisar entregas: uma linha por aluno, com seus testes e seu código.",
+  "tch.cta":"Ativar ferramentas para professores",
+  "tch.ctaNote":"Abre o Multipad com o menu Sala de aula visível. Seus alunos não precisam ativar nada: só abrem seu link.",
+  "tch.testsTitle":"O que os testes verificam",
+  "tch.t1":"Que exista um elemento, ou pelo menos N, por exemplo três elementos li.",
+  "tch.t2":"Que um elemento tenha um texto, um estilo CSS ou um atributo, como o alt de uma imagem.",
+  "tch.t3":"Que ao clicar em um botão apareça um texto, ou que o console mostre um resultado.",
+  "tch.t4":"Que a página não tenha erros de JavaScript.",
+  "tch.examTitle":"Modo prova",
+  "tch.exam":"Bloqueia colar texto copiado fora do Multipad e registra quando o aluno sai da janela. Dá evidência para conversar com o aluno; não impede totalmente a cola.",
+  "tch.limits":"Por enquanto os testes cobrem HTML, CSS e JavaScript. Python, SQL, Power BI e KNIME não são verificados automaticamente.",
   'skip':'Ir para o conteúdo', 'nav.features':'Recursos', 'nav.langs':'Linguagens', 'nav.download':'Baixar', 'nav.keys':'Atalhos', 'nav.news':'Novidades', 'nav.faq':'Perguntas',
   'nav.donate':'Doar', 'nav.author':'Autor',
   'don.h1':'Apoie o Multipad', 'don.lede':'O Multipad é gratuito e vai continuar gratuito. Se ele te ajuda e você quer que ele cresça, pode doar qualquer valor.',
@@ -122,7 +172,7 @@ const PT = {
 
   'home.h1':'Escreva código em várias janelas ao mesmo tempo, em qualquer dispositivo',
   'home.lede':'O Multipad é um editor de código gratuito no estilo do Notepad++. Divida cada janela em até quatro painéis, abra outra janela no seu segundo monitor e execute HTML, JavaScript, Python e SQL sem sair do editor.',
-  'home.dl':'Baixar o Multipad', 'home.open':'Usar no navegador', 'home.fine':'Versão 1.4.0. Grátis, sem criar conta, em português, espanhol, inglês ou francês.',
+  'home.dl':'Baixar o Multipad', 'home.open':'Usar no navegador', 'home.fine':'Versão 1.5.0. Grátis, sem criar conta, em português, espanhol, inglês ou francês.',
   'home.whyTitle':'O que o Multipad tem de diferente', 'home.whyIntro':'A ideia vem do Notepad++, pensada para quem trabalha com mais de uma tela ou troca de dispositivo durante o dia.',
   'home.h1t':'Painéis e janelas', 'home.h1p':'Até quatro painéis por janela e uma janela em cada monitor. Arraste abas de uma janela para outra.', 'home.h1l':'Ver todos os recursos',
   'home.h2t':'Execute seu código', 'home.h2p':'HTML, JavaScript, Python e SQL rodam no seu navegador. Java, C++ e outras linguagens compiladas rodam em um servidor Judge0.', 'home.h2l':'Ver as linguagens',
@@ -131,7 +181,7 @@ const PT = {
   'demo.win1':'Janela 1', 'demo.win2':'Janela 2, monitor direito', 'demo.win3':'Janela 3', 'demo.run':'Executar', 'demo.live':'Ao vivo', 'demo.preview':'Pré-visualização', 'demo.panes2':'2 painéis', 'demo.codeLabel':'Código HTML de exemplo',
   'demo.note':'Edite o código: a pré-visualização muda enquanto você digita. É assim que funciona o painel de execução no app.',
 
-  'feat.h1':'Recursos', 'feat.lede':'Tudo o que o Multipad faz na versão 1.4.0.',
+  'feat.h1':'Recursos', 'feat.lede':'Tudo o que o Multipad faz na versão 1.5.0.',
   'f1t':'Até quatro painéis por janela', 'f1p':'Coloque dois ou quatro arquivos lado a lado ou empilhados. Arraste os divisores para ajustar o tamanho (clique duplo iguala), ou clone uma aba para ver o mesmo arquivo em dois lugares.',
   'f2t':'Uma janela em cada monitor', 'f2p':'"Nova janela em outra tela" abre o Multipad direto no seu segundo monitor (Chrome e Edge no computador). Cada janela lembra suas abas e painéis, e você pode dar um nome a ela, por exemplo "Monitor esquerdo".',
   'f3t':'Abas que viajam entre janelas', 'f3p':'Arraste uma aba para outra janela ou use "Enviar para outra janela…". Se o mesmo arquivo está aberto em duas janelas, o que você digita em uma aparece na outra. Fechou uma janela sem querer? Recupere-a com Reabrir janela fechada.',
@@ -195,6 +245,31 @@ const PT = {
 };
 
 const FR = {
+  "nav.teachers":"Enseignants",
+  "f10t":"Mode classe pour les enseignants",
+  "f10p":"Créez des exercices HTML, CSS et JavaScript avec des tests automatiques, partagez-les par un lien et corrigez les rendus que vos élèves déposent sur Canvas. À activer dans les Réglages.",
+  "f10l":"Voir le mode classe",
+  "n6d":"Version 1.5.0, novembre 2026",
+  "n6p":"Arrivée du mode classe : l'enseignant crée un exercice avec des tests automatiques et le partage par un lien ; l'élève le vérifie et rend un .zip ; l'enseignant corrige tous les rendus dans un tableau. À activer dans les Réglages avec Afficher les outils enseignant.",
+  "tch.h1":"Multipad pour les enseignants",
+  "tch.lede":"Créez un exercice HTML, CSS et JavaScript, partagez-le par un lien et recevez les rendus sur Canvas. Les tests automatiques indiquent à l'élève ce qui manque avant de rendre.",
+  "tch.video":"Tout le parcours en 2 minutes : l'enseignant crée l'exercice, une élève le résout et le rend, et l'enseignant corrige les rendus. La vidéo est en espagnol.",
+  "tch.howTitle":"Comment ça marche",
+  "tch.s1":"Vous préparez les fichiers de départ dans Multipad et rédigez les consignes.",
+  "tch.s2":"Vous ajoutez des tests automatiques et les vérifiez avec votre propre solution.",
+  "tch.s3":"Vous copiez le lien et le collez dans le devoir Canvas. L'exercice voyage dans le lien : ni serveur ni comptes.",
+  "tch.s4":"L'élève travaille, appuie sur Vérifier jusqu'à ce que tout passe et dépose sur Canvas le .zip téléchargé par le bouton Rendre.",
+  "tch.s5":"Vous téléchargez les rendus depuis Canvas et les ouvrez dans Corriger les rendus : une ligne par élève, avec ses tests et son code.",
+  "tch.cta":"Activer les outils enseignant",
+  "tch.ctaNote":"Ouvre Multipad avec le menu Classe visible. Vos élèves n'ont rien à activer : ils ouvrent simplement votre lien.",
+  "tch.testsTitle":"Ce que vérifient les tests",
+  "tch.t1":"Qu'un élément existe, ou au moins N, par exemple trois éléments li.",
+  "tch.t2":"Qu'un élément ait un texte, un style CSS ou un attribut, comme l'alt d'une image.",
+  "tch.t3":"Qu'un clic sur un bouton affiche un texte, ou que la console affiche un résultat.",
+  "tch.t4":"Que la page n'ait pas d'erreurs JavaScript.",
+  "tch.examTitle":"Mode examen",
+  "tch.exam":"Bloque le collage de texte copié hors de Multipad et enregistre quand l'élève quitte la fenêtre. Cela vous donne des éléments pour en parler avec l'élève ; cela n'empêche pas complètement la triche.",
+  "tch.limits":"Pour l'instant, les tests couvrent HTML, CSS et JavaScript. Python, SQL, Power BI et KNIME ne sont pas vérifiés automatiquement.",
   'skip':'Aller au contenu', 'nav.features':'Fonctionnalités', 'nav.langs':'Langages', 'nav.download':'Télécharger', 'nav.keys':'Raccourcis', 'nav.news':'Nouveautés', 'nav.faq':'Questions',
   'nav.donate':'Faire un don', 'nav.author':'Auteur',
   'don.h1':'Soutenir Multipad', 'don.lede':'Multipad est gratuit et le restera. S\'il vous est utile et que vous voulez qu\'il progresse, vous pouvez donner le montant de votre choix.',
@@ -213,7 +288,7 @@ const FR = {
 
   'home.h1':'Écrivez du code dans plusieurs fenêtres à la fois, sur n\'importe quel appareil',
   'home.lede':'Multipad est un éditeur de code gratuit dans l\'esprit de Notepad++. Divisez chaque fenêtre en quatre volets maximum, ouvrez une autre fenêtre sur votre deuxième écran et exécutez HTML, JavaScript, Python et SQL sans quitter l\'éditeur.',
-  'home.dl':'Télécharger Multipad', 'home.open':'L\'utiliser dans le navigateur', 'home.fine':'Version 1.4.0. Gratuit, sans compte, en français, espagnol, anglais ou portugais.',
+  'home.dl':'Télécharger Multipad', 'home.open':'L\'utiliser dans le navigateur', 'home.fine':'Version 1.5.0. Gratuit, sans compte, en français, espagnol, anglais ou portugais.',
   'home.whyTitle':'Ce qui distingue Multipad', 'home.whyIntro':'L\'idée vient de Notepad++, pensée pour les personnes qui travaillent sur plusieurs écrans ou changent d\'appareil dans la journée.',
   'home.h1t':'Volets et fenêtres', 'home.h1p':'Jusqu\'à quatre volets par fenêtre et une fenêtre par écran. Faites glisser les onglets d\'une fenêtre à l\'autre.', 'home.h1l':'Voir toutes les fonctionnalités',
   'home.h2t':'Exécutez votre code', 'home.h2p':'HTML, JavaScript, Python et SQL s\'exécutent dans votre navigateur. Java, C++ et les autres langages compilés s\'exécutent sur un serveur Judge0.', 'home.h2l':'Voir les langages',
@@ -222,7 +297,7 @@ const FR = {
   'demo.win1':'Fenêtre 1', 'demo.win2':'Fenêtre 2, écran de droite', 'demo.win3':'Fenêtre 3', 'demo.run':'Exécuter', 'demo.live':'En direct', 'demo.preview':'Aperçu', 'demo.panes2':'2 volets', 'demo.codeLabel':'Code HTML de démonstration',
   'demo.note':'Modifiez le code : l\'aperçu change pendant la saisie. C\'est ainsi que fonctionne le panneau d\'exécution dans l\'application.',
 
-  'feat.h1':'Fonctionnalités', 'feat.lede':'Tout ce que fait Multipad dans la version 1.4.0.',
+  'feat.h1':'Fonctionnalités', 'feat.lede':'Tout ce que fait Multipad dans la version 1.5.0.',
   'f1t':'Jusqu\'à quatre volets par fenêtre', 'f1p':'Placez deux ou quatre fichiers côte à côte ou empilés. Faites glisser les séparateurs pour régler la taille (un double-clic les égalise), ou clonez un onglet pour voir le même fichier à deux endroits.',
   'f2t':'Une fenêtre par écran', 'f2p':'"Nouvelle fenêtre sur un autre écran" ouvre Multipad directement sur votre deuxième écran (Chrome et Edge sur ordinateur). Chaque fenêtre garde ses onglets et ses volets, et vous pouvez lui donner un nom, par exemple "Écran de gauche".',
   'f3t':'Des onglets qui voyagent entre les fenêtres', 'f3p':'Faites glisser un onglet vers une autre fenêtre ou utilisez "Envoyer vers une autre fenêtre…". Si le même fichier est ouvert dans deux fenêtres, ce que vous tapez dans l\'une apparaît dans l\'autre. Une fenêtre fermée par erreur se récupère avec Rouvrir une fenêtre fermée.',
@@ -405,6 +480,7 @@ menuBtn.addEventListener('click', () => {
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && mainNav.classList.contains('open')) { mainNav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); menuBtn.focus(); } });
 langBtn.addEventListener('change', () => setLang(langBtn.value));
 document.querySelectorAll('.app-link').forEach(a => { a.href = APP_URL; a.rel = 'noopener'; });
+document.querySelectorAll('.teacher-link').forEach(a => { a.href = APP_URL + '#docente'; a.rel = 'noopener'; });
 if (REPO_URL) { const r = document.getElementById('repoLink'); r.href = REPO_URL; r.hidden = false; }
 
 let saved = null;
