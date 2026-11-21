@@ -21,7 +21,7 @@ const EN = {
   "n6p":"Classroom mode arrives: the teacher builds an exercise with automatic tests and shares it with a link; the student checks it and submits a .zip; the teacher reviews every submission in one table. Turn it on in Settings with Show teacher tools.",
   "tch.h1":"Multipad for teachers",
   "tch.lede":"Build an HTML, CSS and JavaScript exercise, share it with a link and collect submissions in Canvas. Automatic tests tell students what is missing before they submit.",
-  "tch.video":"The whole flow in 2 minutes: the teacher builds the exercise, a student solves and submits it, and the teacher reviews the submissions. The video is in Spanish.",
+  "tch.video":"The whole flow in 2 minutes: the teacher builds the exercise, a student solves and submits it, and the teacher reviews the submissions.",
   "tch.howTitle":"How it works",
   "tch.s1":"You prepare the starter files in Multipad and write the instructions.",
   "tch.s2":"You add automatic tests and check them against your own solution.",
@@ -137,7 +137,7 @@ const PT = {
   "n6p":"Chega o modo sala de aula: o professor cria um exercício com testes automáticos e o compartilha com um link; o aluno o verifica e entrega um .zip; o professor revisa todas as entregas em uma tabela. Ative em Configurações, com Mostrar ferramentas para professores.",
   "tch.h1":"Multipad para professores",
   "tch.lede":"Crie um exercício de HTML, CSS e JavaScript, compartilhe com um link e receba as entregas no Canvas. Os testes automáticos dizem ao aluno o que falta antes de entregar.",
-  "tch.video":"O fluxo completo em 2 minutos: o professor cria o exercício, uma aluna o resolve e entrega, e o professor revisa as entregas. O vídeo está em espanhol.",
+  "tch.video":"O fluxo completo em 2 minutos: o professor cria o exercício, uma aluna o resolve e entrega, e o professor revisa as entregas.",
   "tch.howTitle":"Como funciona",
   "tch.s1":"Você prepara os arquivos iniciais no Multipad e escreve as instruções.",
   "tch.s2":"Você adiciona testes automáticos e os confere com sua própria solução.",
@@ -253,7 +253,7 @@ const FR = {
   "n6p":"Arrivée du mode classe : l'enseignant crée un exercice avec des tests automatiques et le partage par un lien ; l'élève le vérifie et rend un .zip ; l'enseignant corrige tous les rendus dans un tableau. À activer dans les Réglages avec Afficher les outils enseignant.",
   "tch.h1":"Multipad pour les enseignants",
   "tch.lede":"Créez un exercice HTML, CSS et JavaScript, partagez-le par un lien et recevez les rendus sur Canvas. Les tests automatiques indiquent à l'élève ce qui manque avant de rendre.",
-  "tch.video":"Tout le parcours en 2 minutes : l'enseignant crée l'exercice, une élève le résout et le rend, et l'enseignant corrige les rendus. La vidéo est en espagnol.",
+  "tch.video":"Tout le parcours en 2 minutes : l'enseignant crée l'exercice, une élève le résout et le rend, et l'enseignant corrige les rendus.",
   "tch.howTitle":"Comment ça marche",
   "tch.s1":"Vous préparez les fichiers de départ dans Multipad et rédigez les consignes.",
   "tch.s2":"Vous ajoutez des tests automatiques et les vérifiez avec votre propre solution.",
@@ -427,6 +427,9 @@ function render(){ if (preview) preview.srcdoc = code.value; }
 function setLang(l){
   lang = l;
   document.documentElement.lang = l;
+  // Video de la página Para docentes en el idioma elegido.
+  const vid = document.querySelector('.tch-video');
+  if (vid && vid.dataset.lang !== l) { vid.dataset.lang = l; vid.src = 'media/multipad-modo-aula-' + l + '.mp4'; }
   const dict = DICTS[l];
   nodes.forEach(n => { n.textContent = dict ? (dict[n.dataset.i18n] ?? EN[n.dataset.i18n] ?? ES[n.dataset.i18n]) : ES[n.dataset.i18n]; });
   langBtn.value = l;
