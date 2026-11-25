@@ -494,6 +494,26 @@ function setLang(l){
   try { localStorage.setItem('mp-site-lang', l); } catch (e) {}
 }
 
+// Mientras se genera un release nuevo, algunos instaladores tardan más que otros (la Mac suele demorar).
+// Por eso cada botón apunta al release más reciente que ya tiene ese archivo; si la consulta a GitHub falla,
+// se quedan los enlaces a releases/latest.
+const FILE_NAMES = { windows: 'Multipad-Setup.exe', mac: 'Multipad.dmg', linux: 'Multipad.AppImage', android: 'Multipad.apk' };
+async function refreshDownloads(){
+  if (!document.querySelector('.dl-link')) return;
+  try {
+    const r = await fetch('https://api.github.com/repos/gleimbek/Multipad/releases?per_page=15', { headers: { Accept: 'application/vnd.github+json' } });
+    if (!r.ok) return;
+    const releases = (await r.json()).filter(x => !x.draft && !x.prerelease);
+    for (const [key, file] of Object.entries(FILE_NAMES)) {
+      for (const rel of releases) {
+        const asset = (rel.assets || []).find(x => x.name === file && x.state === 'uploaded');
+        if (asset) { DOWNLOADS[key] = asset.browser_download_url; break; }
+      }
+    }
+    applyDownloads();
+  } catch (e) {}
+}
+
 function applyDownloads(){
   document.querySelectorAll('.dl-link').forEach(a => {
     const url = DOWNLOADS[a.dataset.file];
@@ -550,3 +570,4 @@ function browserLang(){
   return 'en';
 }
 setLang(saved && (saved === 'es' || DICTS[saved]) ? saved : browserLang());
+refreshDownloads();
