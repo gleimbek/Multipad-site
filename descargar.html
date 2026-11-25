@@ -103,11 +103,30 @@
         <tr><td>iPhone, iPad</td><td data-i18n="dl.iosOnly">Apple no permite instaladores fuera de la App Store; usa Safari</td><td></td></tr>
       </tbody>
     </table>
-    <ul class="plain note" style="margin-top:18px">
-      <li data-i18n="dl.nWin">Windows puede mostrar el aviso "Windows protegió su PC". Haz clic en Más información y luego en Ejecutar de todas formas.</li>
-      <li data-i18n="dl.nMac">En Mac, si dice que no se puede abrir, ve a Configuración del Sistema, Privacidad y seguridad, y elige Abrir de todos modos.</li>
-      <li data-i18n="dl.nAnd">En Android, permite instalar apps de fuentes desconocidas para tu navegador cuando te lo pida.</li>
-    </ul>
+    <h2 id="aviso" style="margin-top:72px" data-i18n="dl.warnTitle">Si aparece un aviso al instalar</h2>
+    <p class="intro" data-i18n="dl.warnWhy">Los instaladores de Multipad no tienen una firma digital de pago, así que Windows, Mac y Android no los reconocen y muestran un aviso la primera vez. El código es abierto y cada instalador se genera automáticamente en GitHub a partir de ese código. Estos son los pasos para instalarlo de todos modos.</p>
+    <h3>Windows</h3>
+    <ol class="plain">
+      <li data-i18n="dl.w1a">Abre Multipad-Setup.exe. Si aparece "Windows protegió su PC" ("Windows protected your PC"), no pulses No ejecutar.</li>
+      <li data-i18n="dl.w1b">Haz clic en el enlace Más información (More info), debajo del texto del aviso.</li>
+      <li data-i18n="dl.w1c">Aparece el botón Ejecutar de todas formas (Run anyway). Púlsalo y sigue el instalador. Solo pasa la primera vez.</li>
+    </ol>
+    <p class="note" data-i18n="dl.w1d">Si el navegador frena la descarga, en Chrome abre Descargas y elige Conservar; en Edge pasa el cursor sobre la descarga, pulsa ⋯ y elige Conservar.</p>
+    <h3 style="margin-top:28px">macOS</h3>
+    <ol class="plain">
+      <li data-i18n="dl.w2a">Abre Multipad.dmg y arrastra Multipad a la carpeta Aplicaciones.</li>
+      <li data-i18n="dl.w2b">Abre Multipad. Si dice que Apple no puede verificarlo, pulsa Listo; no lo mandes a la papelera.</li>
+      <li data-i18n="dl.w2c">Ve a Configuración del Sistema, Privacidad y seguridad. Abajo, en Seguridad, pulsa Abrir de todos modos y confirma con tu contraseña.</li>
+    </ol>
+    <h3 style="margin-top:28px">Android</h3>
+    <ol class="plain">
+      <li data-i18n="dl.w3a">Abre Multipad.apk desde las descargas del navegador.</li>
+      <li data-i18n="dl.w3b">Si dice que tu navegador no puede instalar apps, toca Configuración, activa Permitir de esta fuente y vuelve.</li>
+      <li data-i18n="dl.w3c">Toca Instalar. Si Google Play Protect dice que no conoce la app, toca Más detalles y luego Instalar de todas formas.</li>
+    </ol>
+    <h3 style="margin-top:28px">Linux</h3>
+    <p class="note" data-i18n="dl.w4">En Linux, haz clic derecho en Multipad.AppImage, entra a Propiedades, Permisos, marca Permitir ejecutar el archivo como programa y ábrelo.</p>
+    <p class="note" data-i18n="dl.warnPwa">Si prefieres no ver ningún aviso, instala Multipad desde el navegador, como se explica arriba. Es la misma app y se actualiza sola.</p>
   </div>
 </section>
 
@@ -118,6 +137,6 @@
     <span><a href="#" id="repoLink" hidden data-i18n="code">Código en GitHub</a></span>
   </div>
 </footer>
-<script src="js/site.js?v=9"></script>
+<script src="js/site.js?v=10"></script>
 </body>
 </html>
